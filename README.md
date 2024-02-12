@@ -17,6 +17,8 @@ Please see the Jupyter Notebook in the notebook folder for further descriptions 
 
 ## What the model output looks like
 The model is hallucinating. However, ASOP may appear like this for non-actuaries!
+
+The following GIF shows multiple illustrative instances.
 ![ASOP RNN Animation](assets/ASOP_RNN_Animated.gif)
 
 ## Author
