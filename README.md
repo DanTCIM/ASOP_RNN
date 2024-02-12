@@ -20,6 +20,27 @@ The model is hallucinating. However, ASOP may appear like this for non-actuaries
 The following GIF shows multiple illustrative instances.
 ![ASOP RNN Animation](assets/ASOP_RNN_Animated.gif)
 
+## Model structure
+![RNN structure](assets/RNN_structure.png)
+
+1. **Model Type: "Recurrent Neural Network"**
+   - A Recurrent Neural Network (RNN) is a type of artificial neural network designed to recognize patterns in sequences of data, such as text, genomes, handwriting, or numerical time series data from market indicators or sensors. The RNN processes inputs with a dependency structure allowing information to persist within the network; in other words, the network creates a sort of memory of previous inputs in its internal state. 
+
+2. **First Layer: LSTM**
+   - The first layer is an LSTM (Long Short-Term Memory) layer with 512 units. LSTM is a type of artificial neural network used in deep learning which is especially good at remembering information for long periods. This layer takes sequences as input and outputs a sequence of the same length (40 time steps here), and with 512 units at each time step.
+
+3. **Second Layer: Dropout**
+   - Right after the first LSTM, there's a Dropout layer. Dropout is a simple yet effective technique used to prevent the model from overfitting. This layer randomly sets input units to 0 with a certain frequency (50%) during training, helping generalization.
+
+4. **Third Layer: LSTM**
+   - There's another LSTM layer, also with 512 units. However, this time it outputs a single 512-feature vector instead of a sequence.
+
+5. **Fourth Layer: Dropout**
+   - Another Dropout layer to prevent overfitting.
+
+6. **Fifth Layer: Dense**
+   - The final layer is a Dense (or fully connected) layer with 69 units and 69 feature outputs. The output leads to predicting a character among 69 unique characters.
+
 ## Author
 Dan Kim 
 
