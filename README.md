@@ -15,6 +15,10 @@ Although a relatively small neural network, it contains around 3 million paramet
 
 Please see the Jupyter Notebook in the notebook folder for further descriptions of the model.
 
+## What the model output looks like
+The model is hallucinating. However, ASOP may appear like this for non-actuaries!
+![ASOP RNN Animation](assets/ASOP_RNN_Animated.gif)
+
 ## Author
 Dan Kim 
 
