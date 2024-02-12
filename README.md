@@ -18,10 +18,10 @@ Please see the [Jupyter Notebook](./notebook/ASOP_RNN.ipynb) in the `notebook` f
 The model is hallucinating. However, ASOP may appear like this for non-actuaries!
 
 The following GIF shows multiple illustrative instances.
-![ASOP RNN Animation](assets/ASOP_RNN_Animated.gif)
+![ASOP RNN Animation](images/ASOP_RNN_Animated.gif)
 
 ## Model structure
-![RNN structure](assets/RNN_structure.png)
+![RNN structure](images/RNN_structure.png)
 
 1. **Model Type: "Recurrent Neural Network"**
    - A Recurrent Neural Network (RNN) is a type of artificial neural network designed to recognize patterns in sequences of data, such as text, genomes, handwriting, or numerical time series data from market indicators or sensors. The RNN processes inputs with a dependency structure allowing information to persist within the network; in other words, the network creates a sort of memory of previous inputs in its internal state. 
