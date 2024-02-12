@@ -58,4 +58,5 @@ This project is licensed under the Apache 2.0 License - see the LICENSE.md file 
 1. A large portion of the code was referenced from an exercise in DeepLearning AI's Sequence Models online course. Thank you, Andrew Ng and folks, for the awesome educational content! https://www.coursera.org/learn/nlp-sequence-models/
 2. This project was inspired by the work of Andrej Karpathy. You can find his code implementation here: https://gist.github.com/karpathy/d4dee566867f8291f086
 3. Read more about "The Unreasonable Effectiveness of Recurrent Neural Networks" in Andrej Karpathy's blog post: https://karpathy.github.io/2015/05/21/rnn-effectiveness/
-4. Actuarial Standards of Practice, Actuarial Standards Board, downloaded as of December 2023: https://www.actuarialstandardsboard.org/standards-of-practice/
+4. Actuarial Standards of Practice, Actuarial Standards Board: https://www.actuarialstandardsboard.org/standards-of-practice/
+5. ASOP downloaded as of December 2023: http://www.actuarialstandardsboard.org/wp-content/uploads/2023/12/ASOPs-as-of-Decemeber-2023.zip
