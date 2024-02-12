@@ -23,7 +23,7 @@ The model is hallucinating. However, ASOP may appear like this for non-actuaries
 Dan Kim 
 
 - [@Dan Kim](https://github.com/DanTCIM)
-- Dan153TCIM@gmail.com
+- dan.kim.actuary@gmail.com
 
 ## License
 
