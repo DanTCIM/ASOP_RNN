@@ -17,7 +17,7 @@ The Streamlit implementation Python code is [here](ASOP_RNN_Streamlit.py).
 
 ## What the model output looks like
 
-Please visit the [Streamlit site](https://asop-dream.streamlit.app/) and run the model yourself!
+Please visit the Streamlit web app [(https://asop-dream.streamlit.app/)](https://asop-dream.streamlit.app/) and run the model yourself!
 
 The model is hallucinating. However, ASOP may appear like this for non-actuaries!
 
