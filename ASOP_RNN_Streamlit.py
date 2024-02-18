@@ -20,7 +20,7 @@ indices_char = dict((i, c) for i, c in enumerate(chars))
 
 # Set up the title and input
 st.title("Actuarial Standards of Practice (ASOP) Dreaming Model")
-st.header("Imagine a world where AI dreams Actuarial Standards of Practice")
+st.header("Imagine a world where 🤖 AI dreams Actuarial Standards of Practice")
 
 link = "https://github.com/DanTCIM/ASOP_RNN"
 st.markdown(f"The model is trained using recurrent neural network. The Python code and the documentation of the project in [GitHub]({link}).")
