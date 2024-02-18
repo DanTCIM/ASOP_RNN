@@ -12,9 +12,13 @@ The model was trained on a small dataset of about 800,000 characters (about 1MB)
 
 Although a relatively small neural network, it contains around 3 million parameters. It took about 5 hours to train on an Apple M2 Pro chip going through 21 epochs. The `model` folder includes a [pre-trained model](./model) so you can quickly deploy and generate ASOPs without training yourself. The code is available for you to train on any text documents.
 
-Please see the [Jupyter Notebook](./notebook/ASOP_RNN.ipynb) in the `notebook` folder for further descriptions of the model and underlying codes.
+Please see the [Jupyter Notebook](./notebook/ASOP_RNN.ipynb) in the `notebook` folder for further descriptions of the model and underlying codes.  
+The Streamlit implementation Python code is [here](ASOP_RNN_Streamlit.py).
 
 ## What the model output looks like
+
+Please visit the [Streamlit site](https://asopdream.streamlit.app/) and run the model yourself!
+
 The model is hallucinating. However, ASOP may appear like this for non-actuaries!
 
 The following animated GIF shows multiple illustrative instances.
