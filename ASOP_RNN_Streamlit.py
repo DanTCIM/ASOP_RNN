@@ -37,7 +37,6 @@ def load_keras_model(model_path):
 
 model_path = 'model/Life_ASOP_rnn_model021.keras'
 model = load_keras_model(model_path)
-#model = load_model('/Users/dan153/LLM/ASOP_RNN/model/Life_ASOP_rnn_model021.keras')
 
 def sample(preds, temperature=1.0):
     """
