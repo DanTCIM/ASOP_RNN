@@ -20,7 +20,7 @@ indices_char = dict((i, c) for i, c in enumerate(chars))
 
 # Set up the title and input
 st.title("Actuarial Standards of Practice (ASOP) Dreaming Model")
-st.header("Imagine a world where AI dreams up Actuarial Standards of Practice.")
+st.header("Imagine a world where AI dreams Actuarial Standards of Practice")
 
 link = "https://github.com/DanTCIM/ASOP_RNN"
 st.markdown(f"The model is trained using recurrent neural network. The Python code and the documentation of the project in [GitHub]({link}).")
@@ -30,7 +30,17 @@ usr_input = st.text_input("")
 
 # # Model and Function set up
 # Load the model
-model = load_model('/Users/dan153/LLM/ASOP_RNN/model/Life_ASOP_rnn_model021.keras')
+@st.cache_resource 
+def load_keras_model(model_path):
+    """Load and return the Keras model from the given path."""
+    model = load_model(model_path)
+    return model
+
+# Model and Function setup
+#model_path = '/Users/dan153/LLM/ASOP_RNN/model/Life_ASOP_rnn_model021.keras'
+model_path = 'model/Life_ASOP_rnn_model021.keras'
+model = load_keras_model(model_path)
+#model = load_model('/Users/dan153/LLM/ASOP_RNN/model/Life_ASOP_rnn_model021.keras')
 
 def sample(preds, temperature=1.0):
     """
