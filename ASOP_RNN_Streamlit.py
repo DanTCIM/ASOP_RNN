@@ -7,7 +7,7 @@ from tensorflow.keras.models import load_model
 st.set_page_config (layout="wide")
 
 # # Input set up
-# Set the length of the sequences for training
+# Set the length of the sequences for model
 Tx = 40
 
 chars = ['\n', ' ', '#', '$', '%', '&', "'", '(', ')', ',', '-', '.', '/', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ':', ';', '?', '[', ']', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '\xa0', 'ω', '‐', '–', '—', '‘', '’', '“', '”', '•', '…', '⎯', '\uf0b7', '\uf0be', '\uf8e7']
@@ -23,7 +23,7 @@ st.title("Actuarial Standards of Practice (ASOP) Dreaming Model")
 st.header("Imagine a world where 🤖 AI dreams Actuarial Standards of Practice")
 
 link = "https://github.com/DanTCIM/ASOP_RNN"
-st.markdown(f"The model is trained using recurrent neural network. The Python code and the documentation of the project in [GitHub]({link}).")
+st.markdown(f"The model is trained using a recurrent neural network (RNN). The Python code and the documentation of the project are in [GitHub]({link}).")
 
 st.markdown("Write the beginning of your ASOP, the ASOP Dreaming Model will complete it. Your input is: ")
 usr_input = st.text_input("")
