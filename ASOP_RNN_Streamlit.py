@@ -28,16 +28,13 @@ st.markdown(f"The model is trained using recurrent neural network. The Python co
 st.markdown("Write the beginning of your ASOP, the ASOP Dreaming Model will complete it. Your input is: ")
 usr_input = st.text_input("")
 
-# # Model and Function set up
-# Load the model
+# # Model and Function setup
 @st.cache_resource 
 def load_keras_model(model_path):
     """Load and return the Keras model from the given path."""
     model = load_model(model_path)
     return model
 
-# Model and Function setup
-#model_path = '/Users/dan153/LLM/ASOP_RNN/model/Life_ASOP_rnn_model021.keras'
 model_path = 'model/Life_ASOP_rnn_model021.keras'
 model = load_keras_model(model_path)
 #model = load_model('/Users/dan153/LLM/ASOP_RNN/model/Life_ASOP_rnn_model021.keras')
