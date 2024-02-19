@@ -83,7 +83,7 @@ def generate_output(temperature = 1.0, ASOP_length = 500):
     sentence = ('{0:0>' + str(Tx) + '}').format(usr_input).lower() # Zero pad the input sentence to make length Tx
     generated += usr_input 
 
-    st.write("\n\nHere is your ASOP: \n\n") 
+    st.write("\n\nHere is your ASOP dream 💤: \n\n") 
     # Placeholder for continuous output
     output_placeholder = st.empty()
     
