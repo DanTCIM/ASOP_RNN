@@ -1,6 +1,6 @@
 # Actuarial Standards of Practice (ASOP) Dreaming Language Model using Recurrent Neural Network
 
-## Description
+## 1. Description
 Welcome to the ASOP Dreaming Language Model! 
 The project is to create a recurrent neural network (RNN) that generates dreamy and illusional Actuarial Standards of Practice.
 
@@ -15,16 +15,14 @@ Although a relatively small neural network, it contains around 3 million paramet
 Please see the [Jupyter Notebook](./notebook/ASOP_RNN.ipynb) in the `notebook` folder for further descriptions of the model and underlying codes.  
 The Streamlit implementation Python code is [here](ASOP_RNN_Streamlit.py).
 
-## What the model output looks like
-
-Please visit the Streamlit web app [(https://asop-dream.streamlit.app/)](https://asop-dream.streamlit.app/) and run the model yourself!
+## 2. Demo App and Model Output
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://asop-dream.streamlit.app/)  
+Please visit the Streamlit web app (https://asop-dream.streamlit.app/) and run the model yourself!
 
 The model is hallucinating. However, ASOP may appear like this for non-actuaries!
-
-The following animated GIF shows multiple illustrative instances.
 ![ASOP RNN Animation](images/ASOP_RNN_Animated.gif)
 
-## Model structure
+## 3. Model structure
 ![RNN structure](images/RNN_structure.png)
 
 1. **Model Type: "Recurrent Neural Network"**
@@ -45,20 +43,20 @@ The following animated GIF shows multiple illustrative instances.
 6. **Fifth Layer: Dense**
    - The final layer is a Dense (or fully connected) layer with 69 units and 69 feature outputs. The output leads to predicting a character among 69 unique characters.
 
-## Author
+## 4. Author
 Dan Kim 
 
 - [@LinkedIn](https://www.linkedin.com/in/dan-kim-4aaa4b36/)
 - dan.kim.actuary@gmail.com (feel free to reach out with questions or comments)
 
-## Date
+## 5. Date
 - Initially published on 2/10/2024
 - The contents may be updated from time to time
   
-## License
+## 6. License
 This project is licensed under the Apache 2.0 License - see the LICENSE.md file for details.
 
-## Acknowledgments
+## 7. Acknowledgments
 1. A large portion of the code was referenced from an exercise in DeepLearning AI's Sequence Models online course. Thank you, Andrew Ng and folks, for the awesome educational content! https://www.coursera.org/learn/nlp-sequence-models/
 2. This project was inspired by the work of Andrej Karpathy. You can find his code implementation here: https://gist.github.com/karpathy/d4dee566867f8291f086
 3. Read more about "The Unreasonable Effectiveness of Recurrent Neural Networks" in Andrej Karpathy's blog post: https://karpathy.github.io/2015/05/21/rnn-effectiveness/
