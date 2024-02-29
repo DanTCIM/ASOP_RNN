@@ -70,9 +70,6 @@ with st.sidebar:
             my_array, temperature=p_temp, column_name="Temp: " + str(p_temp)
         )
 
-    st.caption(
-        "The following chart illustrates what temperature does to the multinomial probability distribution predicting the next character. The actual PDF differs for each inference and has 69 possible cases (26 lower cases + numbers + special characters)."
-    )
     melted_df = df.reset_index().melt(
         id_vars="index", var_name="ParameterSet", value_name="Probability"
     )
@@ -94,6 +91,10 @@ with st.sidebar:
         theme=None,
         # theme="streamlit",
         use_container_width=False,
+    )
+
+    st.caption(
+        "The chart illustrates what temperature does to the multinomial probability distribution predicting the next character. The actual PDF differs for each inference and has 69 possible cases (26 lower cases + numbers + special characters)."
     )
 
     st.subheader("📖 Further notes")
