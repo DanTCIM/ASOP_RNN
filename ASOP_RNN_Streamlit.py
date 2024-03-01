@@ -109,7 +109,9 @@ st.header("Imagine a world where 🤖 AI dreams Actuarial Standards of Practice"
 st.markdown(
     "Write the beginning of your ASOP, the ASOP Dreaming Model will complete it. Your input is: "
 )
-usr_input = st.text_input("")
+usr_input = st.text_input(
+    label="Enter your ASOP start text here", label_visibility="collapsed"
+)
 
 
 # # Input set up
@@ -290,5 +292,5 @@ def generate_output(temperature=1.0, ASOP_length=500):
 
 # # Model and Function set up
 # Let's generate ASOP!
-if st.button("Generate ASOP"):
+if st.button(label="Generate ASOP"):
     generate_output(temperature=p_temp, ASOP_length=p_max)
