@@ -5,10 +5,6 @@ import altair as alt
 from tensorflow.keras.models import load_model
 import pandas as pd
 
-st.set_page_config(
-    page_title="ASOP Dreaming Model",
-)
-
 
 def pdf_transform(preds, temperature=1.0, column_name="Base"):
     preds = np.asarray(preds).astype("float64")
