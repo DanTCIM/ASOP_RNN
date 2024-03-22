@@ -205,7 +205,7 @@ def load_keras_model(model_path):
     return model
 
 
-model_path = "model/Life_ASOP_rnn_model021.keras"
+model_path = "model/Life_ASOP_rnn_model030.keras"
 model = load_keras_model(model_path)
 
 
