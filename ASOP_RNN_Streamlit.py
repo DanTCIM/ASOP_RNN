@@ -6,7 +6,7 @@ from tensorflow.keras.models import load_model
 import pandas as pd
 
 # Streamlit application starts here
-st.set_page_config(page_title="ASOP Dreaming", page_icon="💤")
+st.set_page_config(page_title="ASOP Dreaming", page_icon="💤", layout="wide")
 
 
 def pdf_transform(preds, temperature=1.0, column_name="Base"):
@@ -25,8 +25,6 @@ def pdf_transform(preds, temperature=1.0, column_name="Base"):
 
 my_array = np.array([0.5, 0.1, 0.2, 0.05, 0.15])
 
-# # Layout set up
-st.set_page_config(layout="wide")
 
 # # Set sidebar
 with st.sidebar:
