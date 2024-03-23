@@ -5,6 +5,9 @@ import altair as alt
 from tensorflow.keras.models import load_model
 import pandas as pd
 
+# Streamlit application starts here
+st.set_page_config(page_title="ASOP Dreaming", page_icon="💤")
+
 
 def pdf_transform(preds, temperature=1.0, column_name="Base"):
     preds = np.asarray(preds).astype("float64")
